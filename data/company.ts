@@ -1,5 +1,7 @@
+import { company as masterCompany } from "@/lib/constants";
+
 export const company = {
-  name: "Bharat Bricks",
+  ...masterCompany,
   description: "Architectural masonry materials for projects that value tactility, endurance and careful detail.",
   values: [
     { number: "01", title: "Material first", text: "We begin with the character of clay, texture, tone and light." },
@@ -7,3 +9,4 @@ export const company = {
     { number: "03", title: "Built to belong", text: "Materials selected to make lasting, composed places." },
   ],
 };
+

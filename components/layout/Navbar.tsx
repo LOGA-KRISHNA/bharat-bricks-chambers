@@ -24,7 +24,8 @@ export function Navbar() {
           className="h-10 w-auto object-contain drop-shadow-sm"
           priority
         />
-        <span className="text-xs font-bold tracking-[.18em] uppercase leading-tight">Bharath Bricks<br />& Chambers</span>
+        <span className="text-xs font-bold tracking-[.18em] uppercase leading-tight">Bharath Bricks<br />and Chambers</span>
+
       </Link>
       <nav className="hidden items-center gap-6 lg:flex">{siteNav.map((item) => <Link className="text-[11px] font-semibold tracking-[.12em] uppercase opacity-80 transition-opacity hover:opacity-100" href={item.href} key={item.href}>{item.label}</Link>)}<Link href="/contact" className="rounded-full border border-current/35 px-4 py-2 text-[11px] font-semibold tracking-[.12em] uppercase">Get in touch</Link></nav>
       <button className="grid h-10 w-10 place-items-center lg:hidden" onClick={() => setOpen(!open)} aria-label="Toggle navigation">{open ? <X /> : <Menu />}</button>
