@@ -11,44 +11,62 @@ export type Product = {
   accent: string;
 };
 
-const verifiedOnRequest = [
-  { label: "Dimensions", value: "Available on request" },
-  { label: "Compressive strength", value: "Verified values available on quote" },
-  { label: "Water absorption", value: "Verified values available on quote" },
-  { label: "Colour / texture", value: "Sample and project review recommended" },
-];
-
 export const products: Product[] = [
   {
-    slug: "machine-made-bricks", name: "Machine-Made Bricks", category: "Structural masonry",
-    summary: "Consistent masonry units for exacting architectural rhythm.",
-    description: "A machine-made brick category for project teams seeking repeatable geometry and a considered clay finish. Confirm final suitability with Bharat Bricks for your location and system.",
-    applications: ["Facade masonry", "Boundary walls", "Interior feature walls"], variants: ["Project-specific options available on request"], technicalSpecifications: verifiedOnRequest, related: ["wire-cut-bricks", "exposed-bricks"], accent: "#a64c31",
+    slug: "machine-made-bricks",
+    name: "Machine-Made Wire-Cut Red Clay Bricks",
+    category: "Machine-Made Clay Masonry",
+    summary: "Consistent, high-precision wire-cut red clay bricks manufactured in our modern chamber.",
+    description: "Our chamber is fully equipped with modern, high-precision machinery, ensuring consistent quality in every wire-cut red clay brick we produce. We offer premium strength, perfect finish, and competitive pricing to meet both small and large project requirements.",
+    applications: [
+      "Structural Load-Bearing Walls",
+      "Architectural Exposed Facades",
+      "Boundary & Compound Walls",
+      "Residential & Commercial Developments",
+    ],
+    variants: [
+      "Standard Machine-Made Wire-Cut Red Clay Brick",
+      "High-Density Structural Red Clay Brick",
+      "Custom Project Volume Specifications",
+    ],
+    technicalSpecifications: [
+      { label: "Manufacturing Process", value: "Fully Machine-Made Wire-Cut Extrusion" },
+      { label: "Material Sourcing", value: "100% High-Grade Natural Red Clay" },
+      { label: "Finish & Edges", value: "High-Precision Smooth Wire-Cut Finish" },
+      { label: "Quality & Consistency", value: "Uniform Machine Density & Geometry" },
+      { label: "Structural Performance", value: "Premium Compressive Strength for Heavy Loads" },
+      { label: "Pricing & Supply", value: "Factory-Direct Competitive Rates for All Project Scales" },
+    ],
+    related: ["wire-cut-red-clay-bricks"],
+    accent: "#a64c31",
   },
   {
-    slug: "wire-cut-bricks", name: "Wire-Cut Bricks", category: "Architectural masonry",
-    summary: "Linear texture and a clean, contemporary clay expression.",
-    description: "Wire-cut brick solutions that bring a refined, textural read to contemporary facades and walls. Request current samples and verified technical data for the intended installation.",
-    applications: ["Architectural facades", "Courtyards", "Screen walls"], variants: ["Project-specific options available on request"], technicalSpecifications: verifiedOnRequest, related: ["machine-made-bricks", "brick-tiles"], accent: "#bd7655",
-  },
-  {
-    slug: "exposed-bricks", name: "Exposed Bricks", category: "Finish masonry",
-    summary: "A durable, tactile finish designed to stay visible.",
-    description: "Exposed brick materials for architectural surfaces where the join, depth and character of masonry remain part of the design language.",
-    applications: ["Feature facades", "Hospitality interiors", "Landscape walls"], variants: ["Project-specific options available on request"], technicalSpecifications: verifiedOnRequest, related: ["wire-cut-bricks", "facade-tiles"], accent: "#7b3525",
-  },
-  {
-    slug: "brick-tiles", name: "Brick Tiles", category: "Cladding",
-    summary: "The material warmth of brick in a cladding-ready format.",
-    description: "Brick tile options for interior and exterior surface design. Installation system, substrate and project performance criteria should be reviewed with the project team.",
-    applications: ["Interior cladding", "Renovation facades", "Retail environments"], variants: ["Project-specific options available on request"], technicalSpecifications: verifiedOnRequest, related: ["facade-tiles", "exposed-bricks"], accent: "#c17c5c",
-  },
-  {
-    slug: "facade-tiles", name: "Facade Tiles", category: "Cladding",
-    summary: "Layered surfaces for a composed architectural envelope.",
-    description: "Facade tile materials for projects that need a measured, tactile exterior finish. Ask for the latest product suitability, samples and tested system information.",
-    applications: ["Ventilated facades", "Commercial elevations", "Entry volumes"], variants: ["Project-specific options available on request"], technicalSpecifications: verifiedOnRequest, related: ["brick-tiles", "machine-made-bricks"], accent: "#926a51",
+    slug: "wire-cut-red-clay-bricks",
+    name: "Precision Wire-Cut Red Clay Bricks",
+    category: "Architectural Red Clay Bricks",
+    summary: "Linear texture, crisp edges, and enduring red clay character for modern architectural elevations.",
+    description: "Our chamber is fully equipped with modern, high-precision machinery, ensuring consistent quality in every wire-cut red clay brick we produce. We offer premium strength, perfect finish, and competitive pricing to meet both small and large project requirements.",
+    applications: [
+      "Exposed Architectural Elevations",
+      "Interior Feature & Partition Walls",
+      "Landscape Enclosures & Courtyards",
+      "Institutional & Civic Buildings",
+    ],
+    variants: [
+      "Standard Red Clay Wire-Cut Finish",
+      "Exposed Architectural Grade Wire-Cut Finish",
+    ],
+    technicalSpecifications: [
+      { label: "Production Line", value: "High-Precision Chamber Machinery" },
+      { label: "Composition", value: "Natural Red Clay Masonry Units" },
+      { label: "Surface Texture", value: "Clean, Crisp Wire-Cut Surface" },
+      { label: "Project Capacity", value: "Supplied for Small & Large Construction Volumes" },
+    ],
+    related: ["machine-made-bricks"],
+    accent: "#bd7655",
   },
 ];
 
-export function getProduct(slug: string) { return products.find((product) => product.slug === slug); }
+export function getProduct(slug: string) {
+  return products.find((product) => product.slug === slug);
+}

@@ -4,22 +4,23 @@ import { PageIntro } from "@/components/sections/PageIntro";
 import { CTA } from "@/components/sections/CTA";
 
 export const metadata: Metadata = {
-  title: "Bricks & Building Materials | Bharath Bricks and Chambers",
+  title: "Machine-Made Wire-Cut Bricks | Bharath Bricks and Chambers",
   description:
-    "Explore Bharath Bricks and Chambers machine-made bricks, wire-cut bricks, exposed bricks, brick tiles and facade tiles.",
+    "Bharath Bricks and Chambers manufactures high-precision machine-made wire-cut red clay bricks. Fully equipped modern chamber delivering premium strength, perfect finish, and competitive pricing.",
 };
 
 export default function ProductsPage() {
   return (
     <>
       <PageIntro
-        eyebrow="Product categories"
-        title="Masonry, refined for the architectural brief."
-        text="Explore categories below, then request current samples and verified technical information from Bharath Bricks and Chambers for your intended application."
+        eyebrow="Our Product Line"
+        title="High-Precision Machine-Made Wire-Cut Bricks."
+        text="Our chamber is fully equipped with modern, high-precision machinery, ensuring consistent quality in every wire-cut red clay brick we produce. We offer premium strength, perfect finish, and competitive pricing to meet both small and large project requirements."
       />
       <ProductShowcase />
       <CTA />
     </>
   );
 }
+
 
