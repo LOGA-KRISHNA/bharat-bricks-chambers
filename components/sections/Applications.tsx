@@ -1,0 +1,4 @@
+import { applications } from "@/data/applications";
+import { SectionHeading } from "@/components/ui/SectionHeading";
+
+export function Applications() { return <section className="px-5 py-20 md:px-8 md:py-32"><div className="mx-auto max-w-[1280px]"><SectionHeading eyebrow="Applications" title="Made for the places people remember." text="Masonry can anchor a facade, define an interior, frame a garden or simply make an everyday threshold more generous." /><div className="mt-14 grid border-l border-t border-ink/15 sm:grid-cols-2 lg:grid-cols-3">{applications.map((application) => { const Icon = application.icon; return <article className="border-b border-r border-ink/15 p-6 md:p-7" key={application.title}><Icon size={28} strokeWidth={1.25} className="text-brick" /><h3 className="mt-10 text-xl">{application.title}</h3><p className="mt-3 text-sm leading-6 text-muted">{application.description}</p></article>; })}</div></div></section>; }

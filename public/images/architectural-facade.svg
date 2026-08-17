@@ -1,0 +1,13 @@
+<svg width="1600" height="1000" viewBox="0 0 1600 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <rect width="1600" height="1000" fill="#27211D"/>
+  <rect width="1600" height="1000" fill="url(#g)"/>
+  <g opacity=".95">
+    <path d="M100 915V285h470v630H100Zm545 0V120h855v795H645Z" fill="#AE4E31"/>
+    <g stroke="#311C14" stroke-width="8" opacity=".55">
+      <path d="M100 375h470M100 465h470M100 555h470M100 645h470M100 735h470M100 825h470M645 210h855M645 300h855M645 390h855M645 480h855M645 570h855M645 660h855M645 750h855M645 840h855"/>
+      <path d="M210 285v90m140-90v90m140-90v90m-280 90v90m140-90v90m140-90v90m-280 90v90m140-90v90m140-90v90m-280 90v90m140-90v90m140-90v90m-280 90v90m140-90v90m140-90v90m-280 90v90m140-90v90m140-90v90M755 120v90m170-90v90m170-90v90m170-90v90m170-90v90m-850 90v90m170-90v90m170-90v90m170-90v90m170-90v90m-850 90v90m170-90v90m170-90v90m170-90v90m170-90v90m-850 90v90m170-90v90m170-90v90m170-90v90m170-90v90m-850 90v90m170-90v90m170-90v90m170-90v90m170-90v90m-850 90v90m170-90v90m170-90v90m170-90v90m170-90v90m-850 90v90m170-90v90m170-90v90m170-90v90m170-90v90m-850 90v90m170-90v90m170-90v90m170-90v90m170-90v90m-850 90v90m170-90v90m170-90v90m170-90v90m170-90v90"/>
+    </g>
+  </g>
+  <path d="M795 920V390h220v530H795Z" fill="#2D2923"/><path d="M1060 920V490h290v430h-290Z" fill="#D5B686" opacity=".77"/>
+  <defs><linearGradient id="g" x1="1200" y1="50" x2="400" y2="980" gradientUnits="userSpaceOnUse"><stop stop-color="#F3C98B" stop-opacity=".32"/><stop offset=".55" stop-color="#E7895E" stop-opacity="0"/><stop offset="1" stop-color="#160F0C" stop-opacity=".35"/></linearGradient></defs>
+</svg>

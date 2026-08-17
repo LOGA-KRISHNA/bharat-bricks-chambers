@@ -1,0 +1,2 @@
+const stats = [["01", "A material-led approach"], ["02", "A project-minded process"], ["03", "A lasting architectural expression"]];
+export function Stats() { return <section className="border-y border-ink/15 px-5 py-8 md:px-8"><div className="mx-auto grid max-w-[1280px] gap-4 sm:grid-cols-3">{stats.map(([number, text]) => <div key={number} className="flex gap-4"><span className="eyebrow text-brick">{number}</span><p className="text-sm font-medium">{text}</p></div>)}</div></section>; }
